@@ -1,7 +1,7 @@
 #include "Dozent.h"
 
-Dozent::Dozent(std::string Hs, std::string Fr)
-: Person(vorname,nachname,geburtsdatum,geschlecht)
+Dozent::Dozent(string sVorname, string sNachname, Datum dtGeburtsdatum, Geschlecht enumGeschlecht, std::string Hs, std::string Fr)
+: Person(sVorname,sNachname,dtGeburtsdatum,enumGeschlecht);
 {
     d_Hochschule=Hs;
     d_Fachrichtung=Fr;

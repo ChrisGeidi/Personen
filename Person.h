@@ -14,13 +14,14 @@ enum Geschlecht
 class Person
 {
     std::string d_vorname, d_nachname;
-    Datum d_geburtsdatum;
+    //Datum d_geburtsdatum;
     Geschlecht d_geschlecht;
 
 public:
-    Person(std::string, std::string, Datum, enum Geschlecht);
+    Person(std::string, std::string);
+    Person(std::string, std::string,/* Datum,*/ enum Geschlecht);
     void printName();
-    Datum getGeburtsdatum();
+    //Datum getGeburtsdatum();
     Geschlecht getGeschlecht();
 };
 
