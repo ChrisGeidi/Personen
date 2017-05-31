@@ -5,8 +5,8 @@
 using namespace std;
 
 Student::Student(string sVorname, string sNachname, Datum dtGeburtsdatum, Geschlecht enumGeschlecht, int iMatrikelnummer, string sHochschule, string sStudiengang)
+:Person(sVorname, sNachname, dtGeburtsdatum, enumGeschlecht)
 {
-    Person(sVorname, sNachname, dtGeburtsdatum, enumGeschlecht);
     d_Matrikelnummer = iMatrikelnummer;
     d_Hochschule = sHochschule;
     d_Studiengang = sStudiengang;
@@ -25,4 +25,19 @@ string Student::getHochschule()
 string Student::getStudiengang()
 {
     return d_Studiengang;
+}
+
+void Student::setMatrikelnummer( int iMatrikelnummer )
+{
+    d_Matrikelnummer = iMatrikelnummer;
+}
+
+void Student::setHochschule( string sHochschule )
+{
+    d_Hochschule = sHochschule;
+}
+
+void Student::setStudiengang( string sStudiengang )
+{
+    d_Studiengang = sStudiengang;
 }
