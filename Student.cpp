@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Student::Student(string sVorname, string sNachname, Datum dtGeburtsdatum, enumGeschlecht, int iMatrikelnummer, string sHochschule, string sStudiengang)
+Student::Student(string sVorname, string sNachname, Datum dtGeburtsdatum, Geschlecht enumGeschlecht, int iMatrikelnummer, string sHochschule, string sStudiengang)
 {
     Person(sVorname, sNachname, dtGeburtsdatum, enumGeschlecht);
     d_Matrikelnummer = iMatrikelnummer;
