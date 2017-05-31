@@ -1,9 +1,9 @@
 #ifndef _DOZENT_H_
 #define _DOZENT_H_
 
-#include <iostream>
+#include "Person.h"
 
-class Dozent
+class Dozent : Person
 {
     std::string d_Hochschule;
     std::string d_Fachrichtung;
