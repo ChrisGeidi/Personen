@@ -2,9 +2,12 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 
+#include <string>
+using namespace std;
 
-class Student
+class Student : Person
 {
+    Student(int, string, string);
     int d_Matrikelnummer;
     string d_Hochschule;
     string d_Studiengang;
