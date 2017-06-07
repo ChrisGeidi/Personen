@@ -1,4 +1,4 @@
-#include "Dozent.h"
+/*#include "Dozent.h"
 
 Dozent::Dozent(string sVorname, string sNachname, Datum dtGeburtsdatum, Geschlecht enumGeschlecht, std::string Hs, std::string Fr)
 : Person(sVorname,sNachname,dtGeburtsdatum,enumGeschlecht);
@@ -15,4 +15,4 @@ std::string Dozent::getHochschule()
 std::string Dozent::getFachrichtung()
 {
     return d_Fachrichtung;
-}
+}*/

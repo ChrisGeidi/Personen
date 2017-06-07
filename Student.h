@@ -5,13 +5,15 @@
 #include <string>
 using namespace std;
 
-class Student : Person
+class Student : public Person
 {
-    Student( int, string, string );
+
     int d_Matrikelnummer;
     string d_Hochschule;
     string d_Studiengang;
 public:
+
+    Student( string, string, /*Datum,*/Geschlecht, int, string, string );
     // get functions
     int getMatrikelnummer();
     string getHochschule();
@@ -20,6 +22,8 @@ public:
     void setMatrikelnummer( int );
     void setHochschule( string );
     void setStudiengang( string );
+
+    void printName();
 
 };
 

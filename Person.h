@@ -1,6 +1,7 @@
 #ifndef PERSON_H
 #define PERSON_H
 
+#include <iostream>
 #include <string>
 #include "Datum.h"
 
@@ -17,10 +18,10 @@ class Person
     //Datum d_geburtsdatum;
     Geschlecht d_geschlecht;
 
-public:
+    public:
     Person(std::string, std::string);
     Person(std::string, std::string,/* Datum,*/ enum Geschlecht);
-    void printName();
+    virtual void printName();
     //Datum getGeburtsdatum();
     Geschlecht getGeschlecht();
 };

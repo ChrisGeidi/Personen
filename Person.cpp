@@ -3,13 +3,13 @@
 
 using namespace std;
 
-Person::Person(string vorname, string nachname)
+/*Person::Person(string vorname, string nachname)
 :
     d_vorname(vorname),
-    d_nachname(nachname);
+    d_nachname(nachname)
 {
 
-}
+}*/
 
 Person::Person(string vorname, string nachname,/* Datum geburtsdatum,*/ Geschlecht geschlecht)
 {
@@ -21,7 +21,8 @@ Person::Person(string vorname, string nachname,/* Datum geburtsdatum,*/ Geschlec
 
 void Person::printName()
 {
-    cout << d_vorname << " " << d_nachname;
+    cout << d_vorname << " " << d_nachname<<endl;
+    cout << "Geschlecht: "<<d_geschlecht<<endl<<endl;
 }
 
 /*

@@ -1,4 +1,4 @@
-#ifndef DATUM_H
+/*#ifndef DATUM_H
 #define DATUM_H
 
 #include <string>
@@ -19,3 +19,4 @@ public:
 
 
 #endif // DATUM
+*/

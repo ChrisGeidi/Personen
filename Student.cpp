@@ -1,11 +1,12 @@
 
-#include "Person.h"
+#include "Person.cpp"
+#include "Student.h"
 #include <string>
 
 using namespace std;
 
-Student::Student(string sVorname, string sNachname, Datum dtGeburtsdatum, Geschlecht enumGeschlecht, int iMatrikelnummer, string sHochschule, string sStudiengang)
-:Person(sVorname, sNachname, dtGeburtsdatum, enumGeschlecht)
+Student::Student(string sVorname, string sNachname/*, Datum dtGeburtsdatum*/, Geschlecht enumGeschlecht, int iMatrikelnummer, string sHochschule, string sStudiengang)
+:Person(sVorname, sNachname, /*dtGeburtsdatum,*/ enumGeschlecht)
 {
     d_Matrikelnummer = iMatrikelnummer;
     d_Hochschule = sHochschule;
@@ -19,7 +20,7 @@ int Student::getMatrikelnummer()
 
 string Student::getHochschule()
 {
-    return d_Hochschule:
+    return d_Hochschule;
 }
 
 string Student::getStudiengang()
@@ -40,4 +41,14 @@ void Student::setHochschule( string sHochschule )
 void Student::setStudiengang( string sStudiengang )
 {
     d_Studiengang = sStudiengang;
+}
+
+void Student::printName()
+{
+    //cout << d_vorname << " " << d_nachname<<endl;
+    //cout << "Geschlecht: "<<d_geschlecht<<endl;
+    Person::printName();
+    cout << "Matrikelnummer: "<<d_Matrikelnummer<<endl;
+    cout << "Hochschule: "<<d_Hochschule<<endl;
+    cout << "Studiengang: "<<d_Studiengang<< endl<<endl;
 }
